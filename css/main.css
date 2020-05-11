@@ -126,6 +126,28 @@ label:focus,
   /* opacity: 1; */
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-animation: autofill 0s forwards;
+    animation: autofill 0s forwards;
+}
+
+@keyframes autofill {
+    100% {
+        background: transparent;
+        color: inherit;
+    }
+}
+
+@-webkit-keyframes autofill {
+    100% {
+        background: transparent;
+        color: inherit;
+    }
+}
+
 .submitBtn{
   color: white;
   background-color: #5B2A61;
@@ -134,4 +156,32 @@ label:focus,
   padding-bottom: 0.2rem;
   padding-left: 1.1rem;;
   padding-right: 1.1rem;
+}
+
+.submitBtn:hover{
+  background-color: #5b2a61b0;
+  color: white;
+}
+
+.hidden-area{
+  position: absolute;
+  display: none;
+}
+
+.closeBtn{
+  color: white;
+  background-color: #5B2A61;
+  border: 1px solid transparent;
+  padding-top:0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 1.1rem;;
+  padding-right: 1.1rem;
+}
+.closeBtn:hover{
+  background-color: #5b2a61b0;
+  color: white;
+}
+
+.modal-body{
+  color: #5B2A61;
 }
