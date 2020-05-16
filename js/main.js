@@ -110,7 +110,7 @@ function submitSuccess() {
 // setInputDate("#submitDate");
 
 function csubmitForm() {
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyFxQ-V3Rjg0MYtJ60a-tVPZdZxUQYl-aj3NSA4al2Q2gdsyQ/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzIjsxbugfnt8FP0IA7gGsjDbhwDLpmY4H0EYMxttawXdvbBPdy/exec'
   const form = document.forms['contact-form']
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => console.log('Success!', response))
